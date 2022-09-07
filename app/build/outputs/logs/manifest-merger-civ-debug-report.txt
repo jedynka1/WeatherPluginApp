@@ -1,0 +1,277 @@
+-- Merging decision tree log ---
+meta-data#plugin-api
+INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:30:9-32:49
+	android:value
+		INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:32:13-46
+	android:name
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:31:13-38
+manifest
+ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:2:1-50:12
+MERGED from [androidx.databinding:viewbinding:4.2.2] C:\Users\WAT\.gradle\caches\transforms-3\cda862081340bf3b55dfa0177c8a090a\transformed\viewbinding-4.2.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\WAT\.gradle\caches\transforms-3\27427cf5426e6e345c9eb4e9681876e9\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:17:1-44:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\WAT\.gradle\caches\transforms-3\65e872522f6fc3abb2ae8a204d5f0a64\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.5.0] C:\Users\WAT\.gradle\caches\transforms-3\d01231c16cd36e7f60f6e8c1d0835f31\transformed\appcompat-resources-1.5.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.5.0] C:\Users\WAT\.gradle\caches\transforms-3\19c2b96a81a33b708e8f6bfd562eba93\transformed\appcompat-1.5.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\99a1f358c8ca116d1b2b794223b4a3e7\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d869d17902e80e3367010b3a365a9b5d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\WAT\.gradle\caches\transforms-3\c574cd271fee16380e8e84c661b2bacb\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.5.0] C:\Users\WAT\.gradle\caches\transforms-3\37c21677f80ec58e10e929083fbeabd9\transformed\activity-1.5.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\ed7fb31d6a2b3ca602a7cb73908d4cdd\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.0] C:\Users\WAT\.gradle\caches\transforms-3\e666dcf637d78e8580a733d2e65dc922\transformed\lifecycle-viewmodel-2.5.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0] C:\Users\WAT\.gradle\caches\transforms-3\5540d0dabe7d26eb864c97a903618f6d\transformed\lifecycle-viewmodel-savedstate-2.5.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\WAT\.gradle\caches\transforms-3\f41dc8ea0bffe2a60a5cd0ee15270c20\transformed\core-ktx-1.8.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\f39c0d6a8a562603023613baf0ebe8c3\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\81490e623a47b5905aa7cae5c69e0bf7\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d1a43d0987531a5b06d46c8b1c34fe55\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\WAT\.gradle\caches\transforms-3\22f24c50ed746cf97e9c417854cbc031\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\WAT\.gradle\caches\transforms-3\79bc6ac69a1f1f82f6a143b504d1fd1e\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\18db0a13f6c123d688b69e9d9b23bb9a\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.8.0] C:\Users\WAT\.gradle\caches\transforms-3\782cd07be17c13c61f11f050f3cce553\transformed\core-1.8.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\4802709460843c7510d6f2bff9cb76b1\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\WAT\.gradle\caches\transforms-3\df27990effb00690aa6a4a008220f833\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.0] C:\Users\WAT\.gradle\caches\transforms-3\666180ec10d1104ccb02e375b19ca707\transformed\lifecycle-runtime-2.5.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\8b7e03a47ba8c3360bf1dfcf31c0b229\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\WAT\.gradle\caches\transforms-3\6e7bc354b7a76e6240b507b2a6fcdaa3\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\b284b298bc3e989f8b8efb1e4389296b\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\WAT\.gradle\caches\transforms-3\a7a781bb3135a516ad2e4543b7480485\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0] C:\Users\WAT\.gradle\caches\transforms-3\e38d71b59f27d5f0acdf89d6c59821f3\transformed\lifecycle-livedata-core-2.5.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\WAT\.gradle\caches\transforms-3\5eee1412da9613309ad5c64b327cacd8\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\7be46a00c8629bbde9eea0805584c400\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\WAT\.gradle\caches\transforms-3\3c5c653ca5db38b306c03a33afdee489\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:2:1-50:12
+	package
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:4:5-56
+		INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:2:1-50:12
+		INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:2:1-50:12
+		INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:2:11-69
+	tools:ignore
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:5:5-44
+application
+ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:7:5-48:19
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:36:5-42:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\WAT\.gradle\caches\transforms-3\65e872522f6fc3abb2ae8a204d5f0a64\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\WAT\.gradle\caches\transforms-3\65e872522f6fc3abb2ae8a204d5f0a64\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\99a1f358c8ca116d1b2b794223b4a3e7\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\99a1f358c8ca116d1b2b794223b4a3e7\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d869d17902e80e3367010b3a365a9b5d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d869d17902e80e3367010b3a365a9b5d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.8.0] C:\Users\WAT\.gradle\caches\transforms-3\782cd07be17c13c61f11f050f3cce553\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] C:\Users\WAT\.gradle\caches\transforms-3\782cd07be17c13c61f11f050f3cce553\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\WAT\.gradle\caches\transforms-3\df27990effb00690aa6a4a008220f833\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\WAT\.gradle\caches\transforms-3\df27990effb00690aa6a4a008220f833\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\WAT\.gradle\caches\transforms-3\6e7bc354b7a76e6240b507b2a6fcdaa3\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\WAT\.gradle\caches\transforms-3\6e7bc354b7a76e6240b507b2a6fcdaa3\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:10:9-41
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.8.0] C:\Users\WAT\.gradle\caches\transforms-3\782cd07be17c13c61f11f050f3cce553\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:12:9-41
+	android:icon
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:11:9-45
+	android:allowBackup
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:8:9-36
+	android:description
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:9:9-47
+	android:theme
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:13:9-40
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:26:9-28:44
+	android:value
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:28:13-41
+	android:name
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:27:13-58
+meta-data#app_desc
+ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:33:9-35:48
+	android:value
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:35:13-45
+	android:name
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:34:13-36
+activity#com.atakmap.app.component
+ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:41:9-47:20
+	tools:ignore
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:43:13-40
+	android:name
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:42:13-53
+intent-filter#action:name:com.atakmap.app.component
+ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:44:13-46:29
+	android:label
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:44:28-60
+action#com.atakmap.app.component
+ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:45:17-68
+	android:name
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:45:25-65
+uses-sdk
+INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:4.2.2] C:\Users\WAT\.gradle\caches\transforms-3\cda862081340bf3b55dfa0177c8a090a\transformed\viewbinding-4.2.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.2.2] C:\Users\WAT\.gradle\caches\transforms-3\cda862081340bf3b55dfa0177c8a090a\transformed\viewbinding-4.2.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\WAT\.gradle\caches\transforms-3\27427cf5426e6e345c9eb4e9681876e9\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\WAT\.gradle\caches\transforms-3\27427cf5426e6e345c9eb4e9681876e9\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\WAT\.gradle\caches\transforms-3\65e872522f6fc3abb2ae8a204d5f0a64\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\WAT\.gradle\caches\transforms-3\65e872522f6fc3abb2ae8a204d5f0a64\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.5.0] C:\Users\WAT\.gradle\caches\transforms-3\d01231c16cd36e7f60f6e8c1d0835f31\transformed\appcompat-resources-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.5.0] C:\Users\WAT\.gradle\caches\transforms-3\d01231c16cd36e7f60f6e8c1d0835f31\transformed\appcompat-resources-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.5.0] C:\Users\WAT\.gradle\caches\transforms-3\19c2b96a81a33b708e8f6bfd562eba93\transformed\appcompat-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.5.0] C:\Users\WAT\.gradle\caches\transforms-3\19c2b96a81a33b708e8f6bfd562eba93\transformed\appcompat-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\99a1f358c8ca116d1b2b794223b4a3e7\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\99a1f358c8ca116d1b2b794223b4a3e7\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d869d17902e80e3367010b3a365a9b5d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d869d17902e80e3367010b3a365a9b5d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\WAT\.gradle\caches\transforms-3\c574cd271fee16380e8e84c661b2bacb\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\WAT\.gradle\caches\transforms-3\c574cd271fee16380e8e84c661b2bacb\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.0] C:\Users\WAT\.gradle\caches\transforms-3\37c21677f80ec58e10e929083fbeabd9\transformed\activity-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.0] C:\Users\WAT\.gradle\caches\transforms-3\37c21677f80ec58e10e929083fbeabd9\transformed\activity-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\ed7fb31d6a2b3ca602a7cb73908d4cdd\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\ed7fb31d6a2b3ca602a7cb73908d4cdd\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.0] C:\Users\WAT\.gradle\caches\transforms-3\e666dcf637d78e8580a733d2e65dc922\transformed\lifecycle-viewmodel-2.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.0] C:\Users\WAT\.gradle\caches\transforms-3\e666dcf637d78e8580a733d2e65dc922\transformed\lifecycle-viewmodel-2.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0] C:\Users\WAT\.gradle\caches\transforms-3\5540d0dabe7d26eb864c97a903618f6d\transformed\lifecycle-viewmodel-savedstate-2.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0] C:\Users\WAT\.gradle\caches\transforms-3\5540d0dabe7d26eb864c97a903618f6d\transformed\lifecycle-viewmodel-savedstate-2.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\WAT\.gradle\caches\transforms-3\f41dc8ea0bffe2a60a5cd0ee15270c20\transformed\core-ktx-1.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\WAT\.gradle\caches\transforms-3\f41dc8ea0bffe2a60a5cd0ee15270c20\transformed\core-ktx-1.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\f39c0d6a8a562603023613baf0ebe8c3\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\f39c0d6a8a562603023613baf0ebe8c3\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\81490e623a47b5905aa7cae5c69e0bf7\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\81490e623a47b5905aa7cae5c69e0bf7\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d1a43d0987531a5b06d46c8b1c34fe55\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d1a43d0987531a5b06d46c8b1c34fe55\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\WAT\.gradle\caches\transforms-3\22f24c50ed746cf97e9c417854cbc031\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\WAT\.gradle\caches\transforms-3\22f24c50ed746cf97e9c417854cbc031\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\WAT\.gradle\caches\transforms-3\79bc6ac69a1f1f82f6a143b504d1fd1e\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\WAT\.gradle\caches\transforms-3\79bc6ac69a1f1f82f6a143b504d1fd1e\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\18db0a13f6c123d688b69e9d9b23bb9a\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\18db0a13f6c123d688b69e9d9b23bb9a\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.8.0] C:\Users\WAT\.gradle\caches\transforms-3\782cd07be17c13c61f11f050f3cce553\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] C:\Users\WAT\.gradle\caches\transforms-3\782cd07be17c13c61f11f050f3cce553\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\4802709460843c7510d6f2bff9cb76b1\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\4802709460843c7510d6f2bff9cb76b1\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\WAT\.gradle\caches\transforms-3\df27990effb00690aa6a4a008220f833\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\WAT\.gradle\caches\transforms-3\df27990effb00690aa6a4a008220f833\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.0] C:\Users\WAT\.gradle\caches\transforms-3\666180ec10d1104ccb02e375b19ca707\transformed\lifecycle-runtime-2.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.0] C:\Users\WAT\.gradle\caches\transforms-3\666180ec10d1104ccb02e375b19ca707\transformed\lifecycle-runtime-2.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\8b7e03a47ba8c3360bf1dfcf31c0b229\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\8b7e03a47ba8c3360bf1dfcf31c0b229\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\WAT\.gradle\caches\transforms-3\6e7bc354b7a76e6240b507b2a6fcdaa3\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\WAT\.gradle\caches\transforms-3\6e7bc354b7a76e6240b507b2a6fcdaa3\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\b284b298bc3e989f8b8efb1e4389296b\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\b284b298bc3e989f8b8efb1e4389296b\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\WAT\.gradle\caches\transforms-3\a7a781bb3135a516ad2e4543b7480485\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\WAT\.gradle\caches\transforms-3\a7a781bb3135a516ad2e4543b7480485\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0] C:\Users\WAT\.gradle\caches\transforms-3\e38d71b59f27d5f0acdf89d6c59821f3\transformed\lifecycle-livedata-core-2.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0] C:\Users\WAT\.gradle\caches\transforms-3\e38d71b59f27d5f0acdf89d6c59821f3\transformed\lifecycle-livedata-core-2.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\WAT\.gradle\caches\transforms-3\5eee1412da9613309ad5c64b327cacd8\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\WAT\.gradle\caches\transforms-3\5eee1412da9613309ad5c64b327cacd8\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\7be46a00c8629bbde9eea0805584c400\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\WAT\.gradle\caches\transforms-3\7be46a00c8629bbde9eea0805584c400\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\WAT\.gradle\caches\transforms-3\3c5c653ca5db38b306c03a33afdee489\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\WAT\.gradle\caches\transforms-3\3c5c653ca5db38b306c03a33afdee489\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		ADDED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\WAT\.gradle\caches\transforms-3\27427cf5426e6e345c9eb4e9681876e9\transformed\recyclerview-1.2.1\AndroidManifest.xml:22:9-38
+	android:minSdkVersion
+		INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:22-64
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+queries
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+package#com.google.android.apps.maps
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d869d17902e80e3367010b3a365a9b5d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d869d17902e80e3367010b3a365a9b5d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d869d17902e80e3367010b3a365a9b5d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\WAT\.gradle\caches\transforms-3\6e7bc354b7a76e6240b507b2a6fcdaa3\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\WAT\.gradle\caches\transforms-3\6e7bc354b7a76e6240b507b2a6fcdaa3\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78

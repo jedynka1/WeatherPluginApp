@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pluginMainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="750dp"-->
+<!--        android:text="@string/hello_blank_fragment" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextTextPersonName4"-->
+<!--        android:layout_width="256dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:text="@string/my_call_sign"-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <Button
+            android:id="@+id/addObject"
+            style="@style/darkButton"
+            android:layout_width="91dp"
+            android:layout_height="84dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:padding="6dp"
+            android:text="Add Object" />
+
+        <Button
+            android:id="@+id/drawShapes"
+            style="@style/darkButton"
+            android:layout_width="91dp"
+            android:layout_height="84dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:padding="6dp"
+            android:text="Draw Shapes Example" />
+
+
+        <!--        <Button-->
+        <!--            android:id="@+id/largerButton"-->
+        <!--            style="@style/darkButton"-->
+        <!--            android:layout_width="91dp"-->
+        <!--            android:layout_height="84dp"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:layout_marginTop="15dp"-->
+        <!--            android:padding="6dp"-->
+        <!--            android:text="@string/open_map" />-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/button2"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:layout_marginTop="15dp"-->
+        <!--            android:padding="6dp"-->
+        <!--            android:text="@string/choose"-->
+        <!--            android:textAlignment="center" />-->
+
+    </LinearLayout>
+
+
+</FrameLayout>

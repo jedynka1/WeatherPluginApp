@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\WAT\\Desktop\\nowe\\app\\kopia\\aplikacja\\atak-civ\\plugin-examples\\plugintemplate\\app\\build\\intermediates\\incremental\\mergeCivDebugResources\\merged.dir\\values-v25\\values-v25.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\WAT\\.gradle\\caches\\transforms-3\\19c2b96a81a33b708e8f6bfd562eba93\\transformed\\appcompat-1.5.0\\res\\values-v25\\values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        }
+    ]
+}
