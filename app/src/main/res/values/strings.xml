@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- App -->
-    <string name="app_name">Map </string>
+    <string name="app_name">Weather plugin </string>
     <!-- description -->
     <string name="app_desc">This plugin demonstrate bare bones plugin UI, and may be used to start a new plugin project</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -13,6 +13,11 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="addObject">Draw a rectangle on the map</string>
     <string name="drawShapes">Draw a shape on the map</string>
+    <string name="readCsvData">Load data</string>
+    <string name="plainUrl">Load data</string>
+    <string name="weatherData">Display weather</string>
+
+
 
 
 

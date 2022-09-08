@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.atakmap.android.cot.CotMapComponent;
@@ -62,6 +63,9 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 
     public static final String SHOW_PLUGIN = "com.atakmap.android.plugintemplate.SHOW_PLUGIN";
     private View templateView;
+
+    private TextView textView;
+
     private final Context pluginContext;
 
     /**************************** CONSTRUCTOR *****************************/
@@ -74,6 +78,7 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         // Remember to use the PluginLayoutInflator if you are actually inflating a custom view
         // In this case, using it is not necessary - but I am putting it here to remind
         // developers to look at this Inflator
+
         templateView = PluginLayoutInflater.inflate(context,
                 R.layout.fragment_plugin_main, null);
 
@@ -83,39 +88,41 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
                 Toast.makeText(getMapView().getContext(), str,
                         Toast.LENGTH_LONG).show();
             }
+
         public boolean onLongClick(View v) {
 
 
-            int id = v.getId();
-            if (id == R.id.addObject) {
-                toast(context.getString(R.string.addObject));
-            }else if (id == R.id.drawShapes) {
-                toast(context.getString(R.string.drawShapes));
-            };
+//            int id = v.getId();
+//            if (id == R.id.addObject) {
+//                toast(context.getString(R.string.addObject));
+//            }else if (id == R.id.drawShapes) {
+//                toast(context.getString(R.string.drawShapes));
+//            };
             return true;
         }
     };
 
-        final Button wheel = templateView
-                .findViewById(R.id.addObject);
-        wheel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                createUnit();
-
-            }
-        });
-        wheel.setOnLongClickListener(longClickListener);
-
-        final Button drawShapes = templateView
-                .findViewById(R.id.drawShapes);
-        drawShapes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                drawShapes();
-            }
-        });
+       // templateView =templateView.findViewById(R.id.weatherData);
+//        final Button wheel = templateView
+//                .findViewById(R.id.addObject);
+//        wheel.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                createUnit();
+//
+//            }
+//        });
+//        wheel.setOnLongClickListener(longClickListener);
+//
+//        final Button drawShapes = templateView
+//                .findViewById(R.id.drawShapes);
+//        drawShapes.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                drawShapes();
+//            }
+//        });
 
 
 
@@ -132,7 +139,7 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
     };
 
     /**************************** INHERITED METHODS *****************************/
-
+    public TextView csvreee;
     @Override
     public void onReceive(Context context, Intent intent) {
 
@@ -146,12 +153,16 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
             showDropDown(templateView, HALF_WIDTH, FULL_HEIGHT, FULL_WIDTH,
                     HALF_HEIGHT, false, this);
         }
-//         templateView = templateView.findViewById(R.id.largerButton);
+
+
+//        csvreee = findViewById(R.id.readCsvData);
 //        templateView.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
+//                templateView.setText("dvcsd");
 //            }
 //        });
+
 
 
 
@@ -213,29 +224,40 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 
     private List<CsvData> csvData= new ArrayList<>();
     void readCsvFile() {
-        InputStream in = pluginContext.getResources().openRawResource(R.raw.dane);
+        InputStream in = pluginContext.getResources().openRawResource(R.raw.forecast);
         BufferedReader reader =  new BufferedReader(
                 new InputStreamReader(in, Charset.forName("UTF-8"))
         );
 
         String line = "";
-        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
+       // SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat timeParsing = new SimpleDateFormat("yyyy-MM-dd hh:mm:s");
+
 
         try{
                 while ( (line = reader.readLine()) != null){
                     String[] tokens = line.split(",");
 
                     CsvData data = new CsvData();
-                    data.setId_stacji(Integer.parseInt(tokens[0]));
-                    data.setStacja(tokens[1]);
-                    data.setData_pomiaru(f.parse(tokens[2]));
-                    data.setGodzina_pomiaru(Integer.parseInt(tokens[3]));
-                    data.setTemperatura(Double.parseDouble(tokens[4]));
-                    data.setPredkosc_wiatru(Integer.parseInt(tokens[5]));
-                    data.setKierunek_wiatru(Integer.parseInt(tokens[6]));
-                    data.setWilgotnosc_wzgledna(Double.parseDouble(tokens[7]));
-                    data.setSuma_opadu(Double.parseDouble(tokens[8]));
-                    data.setCisnienie(Double.parseDouble(tokens[9]));
+                    data.setLatitude(Double.parseDouble(tokens[0]));
+                    data.setLongitude(Double.parseDouble(tokens[1]));
+                    data.setElevation(Double.parseDouble(tokens[2]));
+                    data.setUtc_offset_seconds(Integer.parseInt(tokens[3]));
+                    data.setTimezone(tokens[4]);
+                    data.setTimezone_abbreviation(tokens[5]);
+                    data.setTime(timeParsing.parse(tokens[6]));
+                    data.setTemperature_2m(Double.parseDouble(tokens[7]));
+
+//                    data.setId_stacji(Integer.parseInt(tokens[0]));
+//                    data.setStacja(tokens[1]);
+//                    data.setData_pomiaru(f.parse(tokens[2]));
+//                    data.setGodzina_pomiaru(Integer.parseInt(tokens[3]));
+//                    data.setTemperatura(Double.parseDouble(tokens[4]));
+//                    data.setPredkosc_wiatru(Integer.parseInt(tokens[5]));
+//                    data.setKierunek_wiatru(Integer.parseInt(tokens[6]));
+//                    data.setWilgotnosc_wzgledna(Double.parseDouble(tokens[7]));
+//                    data.setSuma_opadu(Double.parseDouble(tokens[8]));
+//                    data.setCisnienie(Double.parseDouble(tokens[9]));
                     csvData.add(data);
 
                     Log.d("Activity", "Has been created" + data);

@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.atakmap.android.plugintemplate.plugin"
-4    android:versionCode="1"
-5    android:versionName="1.0 () - [4.5.1]" >
+4    android:versionCode="1662552154"
+5    android:versionName="1.0 (379d3a65) - [4.5.1]" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -10,138 +10,139 @@
 9        android:targetSdkVersion="30" />
 9-->[androidx.recyclerview:recyclerview:1.2.1] C:\Users\WAT\.gradle\caches\transforms-3\27427cf5426e6e345c9eb4e9681876e9\transformed\recyclerview-1.2.1\AndroidManifest.xml:22:9-38
 10
-11    <!-- Include required permissions for Google Maps API to run. -->
-12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
-12-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:22-76
-13    <uses-permission android:name="android.permission.INTERNET" />
-13-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:5-67
-13-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:22-64
-14
-15    <uses-feature
-15-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
-16        android:glEsVersion="0x00020000"
-16-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
-17        android:required="true" />
-17-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
-18
-19    <queries>
-19-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
-20
-21        <!-- Needs to be explicitly declared on Android R+ -->
-22        <package android:name="com.google.android.apps.maps" />
-22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
-22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
-23    </queries>
-24
-25    <application
-25-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:7:5-48:19
-26        android:allowBackup="false"
-26-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:8:9-36
-27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-27-->[androidx.core:core:1.8.0] C:\Users\WAT\.gradle\caches\transforms-3\782cd07be17c13c61f11f050f3cce553\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
-28        android:debuggable="true"
-29        android:description="@string/app_desc"
-29-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:9:9-47
-30        android:extractNativeLibs="true"
-30-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:10:9-41
-31        android:icon="@drawable/ic_launcher"
-31-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:11:9-45
-32        android:label="@string/app_name"
-32-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:12:9-41
-33        android:testOnly="true"
-34        android:theme="@style/AppTheme" >
-34-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:13:9-40
-35
-36        <!--
-37             TODO: Before you run your application, you need a Google Maps API key.
-38
-39             To get one, follow the directions here:
-40
-41                https://developers.google.com/maps/documentation/android-sdk/get-api-key
-42
-43             Once you have your API key (it starts with "AIza"), define a new property in your
-44             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
-45             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
-46        -->
-47        <meta-data
-47-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:26:9-28:44
-48            android:name="com.google.android.geo.API_KEY"
-48-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:27:13-58
-49            android:value="YOUR_API_KEY" />
-49-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:28:13-41
-50        <meta-data
-51            android:name="plugin-api"
-51-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:31:13-38
-52            android:value="com.atakmap.app@4.5.1.CIV" />
-52-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:32:13-46
-53        <meta-data
-53-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:33:9-35:48
-54            android:name="app_desc"
-54-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:34:13-36
-55            android:value="@string/app_desc" /> <!-- <provider android:name="com.javacodegeeks.android.contentprovidertest.BirthProvider" -->
-55-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:35:13-45
-56        <!-- android:authorities="com.javacodegeeks.provider.Birthday" -->
-57        <!-- android:exported="true" -->
-58        <!-- tools:ignore="MissingClass"> -->
-59        <!-- </provider> -->
-60        <!-- allow for plugin discovery -->
-61        <activity android:name="com.atakmap.app.component" >
-61-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:41:9-47:20
-61-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:42:13-53
-62            <intent-filter android:label="@string/app_name" >
-62-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:44:13-46:29
-62-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:44:28-60
-63                <action android:name="com.atakmap.app.component" />
-63-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:45:17-68
-63-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:45:25-65
-64            </intent-filter>
-65        </activity>
-66        <!-- Needs to be explicitly declared on P+ -->
-67        <uses-library
-67-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
-68            android:name="org.apache.http.legacy"
-68-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
-69            android:required="false" />
-69-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
-70
-71        <activity
-71-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-72            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-72-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-73            android:exported="false"
-73-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-74            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-74-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-75
-76        <meta-data
-76-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d869d17902e80e3367010b3a365a9b5d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
-77            android:name="com.google.android.gms.version"
-77-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d869d17902e80e3367010b3a365a9b5d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
-78            android:value="@integer/google_play_services_version" />
-78-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d869d17902e80e3367010b3a365a9b5d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
-79
-80        <provider
-80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-81            android:name="androidx.startup.InitializationProvider"
-81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-82            android:authorities="com.atakmap.android.plugintemplate.plugin.androidx-startup"
-82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-83            android:exported="false" >
-83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-84            <meta-data
-84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-85                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-86                android:value="androidx.startup" />
-86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-87            <meta-data
-87-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-88                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-88-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-89                android:value="androidx.startup" />
-89-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-90        </provider>
-91    </application>
-92
-93</manifest>
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:7:5-67
+11-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:7:22-64
+12
+13    <!-- Include required permissions for Google Maps API to run. -->
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
+14-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:22-76
+15
+16    <uses-feature
+16-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+17        android:glEsVersion="0x00020000"
+17-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+18        android:required="true" />
+18-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+19
+20    <queries>
+20-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+21
+22        <!-- Needs to be explicitly declared on Android R+ -->
+23        <package android:name="com.google.android.apps.maps" />
+23-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+23-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+24    </queries>
+25
+26    <application
+26-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:10:5-51:19
+27        android:allowBackup="false"
+27-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:11:9-36
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.8.0] C:\Users\WAT\.gradle\caches\transforms-3\782cd07be17c13c61f11f050f3cce553\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:description="@string/app_desc"
+30-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:12:9-47
+31        android:extractNativeLibs="true"
+31-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:13:9-41
+32        android:icon="@drawable/ic_launcher"
+32-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:14:9-45
+33        android:label="@string/app_name"
+33-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:15:9-41
+34        android:testOnly="true"
+35        android:theme="@style/AppTheme" >
+35-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:16:9-40
+36
+37        <!--
+38             TODO: Before you run your application, you need a Google Maps API key.
+39
+40             To get one, follow the directions here:
+41
+42                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+43
+44             Once you have your API key (it starts with "AIza"), define a new property in your
+45             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+46             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+47        -->
+48        <meta-data
+48-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:29:9-31:44
+49            android:name="com.google.android.geo.API_KEY"
+49-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:30:13-58
+50            android:value="YOUR_API_KEY" />
+50-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:31:13-41
+51        <meta-data
+52            android:name="plugin-api"
+52-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:34:13-38
+53            android:value="com.atakmap.app@4.5.1.CIV" />
+53-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:35:13-46
+54        <meta-data
+54-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:36:9-38:48
+55            android:name="app_desc"
+55-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:37:13-36
+56            android:value="@string/app_desc" /> <!-- <provider android:name="com.javacodegeeks.android.contentprovidertest.BirthProvider" -->
+56-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:38:13-45
+57        <!-- android:authorities="com.javacodegeeks.provider.Birthday" -->
+58        <!-- android:exported="true" -->
+59        <!-- tools:ignore="MissingClass"> -->
+60        <!-- </provider> -->
+61        <!-- allow for plugin discovery -->
+62        <activity android:name="com.atakmap.app.component" >
+62-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:44:9-50:20
+62-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:45:13-53
+63            <intent-filter android:label="@string/app_name" >
+63-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:47:13-49:29
+63-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:47:28-60
+64                <action android:name="com.atakmap.app.component" />
+64-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:48:17-68
+64-->C:\Users\WAT\Desktop\nowe\app\kopia\aplikacja\atak-civ\plugin-examples\plugintemplate\app\src\main\AndroidManifest.xml:48:25-65
+65            </intent-filter>
+66        </activity>
+67        <!-- Needs to be explicitly declared on P+ -->
+68        <uses-library
+68-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+69            android:name="org.apache.http.legacy"
+69-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+70            android:required="false" />
+70-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WAT\.gradle\caches\transforms-3\92ea2e6de64301441a5613d40f033df7\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+71
+72        <activity
+72-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+73            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+73-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+74            android:exported="false"
+74-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+75            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+75-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\WAT\.gradle\caches\transforms-3\8e4fa40833f6e36436c288e23a2815a3\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+76
+77        <meta-data
+77-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d869d17902e80e3367010b3a365a9b5d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+78            android:name="com.google.android.gms.version"
+78-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d869d17902e80e3367010b3a365a9b5d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+79            android:value="@integer/google_play_services_version" />
+79-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\WAT\.gradle\caches\transforms-3\d869d17902e80e3367010b3a365a9b5d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+80
+81        <provider
+81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+82            android:name="androidx.startup.InitializationProvider"
+82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+83            android:authorities="com.atakmap.android.plugintemplate.plugin.androidx-startup"
+83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+84            android:exported="false" >
+84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+85            <meta-data
+85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+86                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+87                android:value="androidx.startup" />
+87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WAT\.gradle\caches\transforms-3\62429795d292a6d71172632a85ec3eb4\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+88            <meta-data
+88-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+89                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+89-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+90                android:value="androidx.startup" />
+90-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WAT\.gradle\caches\transforms-3\d32d947b3674badd6eba3ed129d85c48\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+91        </provider>
+92    </application>
+93
+94</manifest>

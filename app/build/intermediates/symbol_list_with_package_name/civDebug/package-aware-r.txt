@@ -992,6 +992,7 @@ drawable style
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable weather
 id ALT
 id CTRL
 id FUNCTION
@@ -1059,7 +1060,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id addObject
 id adjust_height
 id adjust_width
 id alertTitle
@@ -1137,6 +1137,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editTextTextPersonName2
 id edit_query
 id end
 id expand_activities_button
@@ -1207,12 +1208,14 @@ id parentRelative
 id path
 id pathRelative
 id percent
+id plainUrl
 id position
 id postLayout
 id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id readCsvData
 id rectangles
 id reverseSawtooth
 id right
@@ -1284,6 +1287,8 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView2
+id textView3
 id time
 id title
 id titleDividerNoCustom
@@ -1306,6 +1311,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id weatherData
 id west
 id wide
 id withText
@@ -1369,6 +1375,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 raw dane
+raw forecast
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1424,10 +1431,13 @@ string hello_blank_fragment
 string my_attitiude
 string my_call_sign
 string open_map
+string plainUrl
+string readCsvData
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_maps
 string versionName
+string weatherData
 style ATAKEditText
 style ATAKPluginTheme
 style ATAKSpinner

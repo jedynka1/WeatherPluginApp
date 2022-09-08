@@ -33,7 +33,7 @@ public class PluginTemplateTool extends Tool implements ToolDescriptor {
     @Override
     public Drawable getIcon() {
         return (context == null) ? null
-                : context.getResources().getDrawable(R.drawable.r_icon);
+                : context.getResources().getDrawable(R.drawable.weather);
     }
 
     @Override

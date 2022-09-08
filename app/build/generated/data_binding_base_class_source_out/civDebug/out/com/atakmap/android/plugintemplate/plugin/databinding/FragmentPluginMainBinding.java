@@ -5,7 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.FrameLayout;
+import android.widget.EditText;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -16,24 +18,46 @@ import java.lang.String;
 
 public final class FragmentPluginMainBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
-
-  @NonNull
-  public final Button addObject;
+  private final RelativeLayout rootView;
 
   @NonNull
   public final Button drawShapes;
 
-  private FragmentPluginMainBinding(@NonNull FrameLayout rootView, @NonNull Button addObject,
-      @NonNull Button drawShapes) {
+  @NonNull
+  public final EditText editTextTextPersonName2;
+
+  @NonNull
+  public final EditText plainUrl;
+
+  @NonNull
+  public final TextView readCsvData;
+
+  @NonNull
+  public final TextView textView2;
+
+  @NonNull
+  public final TextView textView3;
+
+  @NonNull
+  public final TextView weatherData;
+
+  private FragmentPluginMainBinding(@NonNull RelativeLayout rootView, @NonNull Button drawShapes,
+      @NonNull EditText editTextTextPersonName2, @NonNull EditText plainUrl,
+      @NonNull TextView readCsvData, @NonNull TextView textView2, @NonNull TextView textView3,
+      @NonNull TextView weatherData) {
     this.rootView = rootView;
-    this.addObject = addObject;
     this.drawShapes = drawShapes;
+    this.editTextTextPersonName2 = editTextTextPersonName2;
+    this.plainUrl = plainUrl;
+    this.readCsvData = readCsvData;
+    this.textView2 = textView2;
+    this.textView3 = textView3;
+    this.weatherData = weatherData;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -58,19 +82,50 @@ public final class FragmentPluginMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.addObject;
-      Button addObject = rootView.findViewById(id);
-      if (addObject == null) {
-        break missingId;
-      }
-
       id = R.id.drawShapes;
       Button drawShapes = rootView.findViewById(id);
       if (drawShapes == null) {
         break missingId;
       }
 
-      return new FragmentPluginMainBinding((FrameLayout) rootView, addObject, drawShapes);
+      id = R.id.editTextTextPersonName2;
+      EditText editTextTextPersonName2 = rootView.findViewById(id);
+      if (editTextTextPersonName2 == null) {
+        break missingId;
+      }
+
+      id = R.id.plainUrl;
+      EditText plainUrl = rootView.findViewById(id);
+      if (plainUrl == null) {
+        break missingId;
+      }
+
+      id = R.id.readCsvData;
+      TextView readCsvData = rootView.findViewById(id);
+      if (readCsvData == null) {
+        break missingId;
+      }
+
+      id = R.id.textView2;
+      TextView textView2 = rootView.findViewById(id);
+      if (textView2 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView3;
+      TextView textView3 = rootView.findViewById(id);
+      if (textView3 == null) {
+        break missingId;
+      }
+
+      id = R.id.weatherData;
+      TextView weatherData = rootView.findViewById(id);
+      if (weatherData == null) {
+        break missingId;
+      }
+
+      return new FragmentPluginMainBinding((RelativeLayout) rootView, drawShapes,
+          editTextTextPersonName2, plainUrl, readCsvData, textView2, textView3, weatherData);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

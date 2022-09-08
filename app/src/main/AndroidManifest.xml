@@ -4,6 +4,9 @@
     package="com.atakmap.android.plugintemplate.plugin"
     tools:ignore="GoogleAppIndexingWarning">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
     <application
         android:allowBackup="false"
         android:description="@string/app_desc"
