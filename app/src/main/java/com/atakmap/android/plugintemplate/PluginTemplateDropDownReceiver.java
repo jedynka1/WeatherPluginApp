@@ -146,15 +146,14 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
          EditText parLan =templateView.findViewById(R.id.enter_your_lat);
          EditText parLon = templateView.findViewById(R.id.enter_your_lon);
 
-       //  double cordLan = Double.parseDouble(parLan.getText().toString());
+         double cordLan = Double.parseDouble(parLan.getText().toString());
          Log.d("test", "cord Lan setted properly" + parLan.getText().toString());
-        // double cordLon = Double.parseDouble(parLon.getText().toString());
-      //   double lala = Double.parseDouble(parLon.getText().toString());
+         double cordLon = Double.parseDouble(parLon.getText().toString());
          Log.d("test", "cord Lon setted properly" + parLon.getText().toString());
 
 
 
-        Call<WeatherResponse> weatherResponse = jsonPlaceHolderApi.weatherResponse(40.77,30.0, "503731d3cb394ea86dc6cfdd6cdb357a");
+        Call<WeatherResponse> weatherResponse = jsonPlaceHolderApi.weatherResponse(cordLan,cordLon, "503731d3cb394ea86dc6cfdd6cdb357a");
 
         weatherResponse.enqueue(new Callback<WeatherResponse>() {
             @Override
