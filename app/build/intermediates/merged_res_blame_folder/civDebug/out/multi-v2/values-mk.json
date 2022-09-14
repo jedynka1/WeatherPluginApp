@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\WAT\\Desktop\\nowe\\app\\kopia\\aplikacja\\atak-civ\\plugin-examples\\plugintemplate\\app\\build\\intermediates\\incremental\\mergeCivDebugResources\\merged.dir\\values-mk\\values-mk.xml",
+            "outputFile": "C:\\Users\\WAT\\Desktop\\Atak_plugin\\Plugin\\Plugin\\nowe\\nowe\\app\\kopia\\aplikacja\\atak-civ\\plugin-examples\\plugintemplate\\app\\build\\intermediates\\incremental\\mergeCivDebugResources\\merged.dir\\values-mk\\values-mk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\WAT\\.gradle\\caches\\transforms-3\\782cd07be17c13c61f11f050f3cce553\\transformed\\core-1.8.0\\res\\values-mk\\values-mk.xml",
