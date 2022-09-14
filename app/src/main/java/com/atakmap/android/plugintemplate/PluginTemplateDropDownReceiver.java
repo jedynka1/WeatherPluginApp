@@ -176,11 +176,11 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 //                    content += weather.getDescription() + "\n";
 //                    content += weather.getIcon() + "\n";
 //                    content += weatherResponses.getBase() + "\n";
-//                    content +="Temp:"  + " " + weatherResponses.getMain().getTemp() + "K " + "\n";
-//                    content +="Temp odczuwalna" + " " + weatherResponses.getMain().getFeelsLike() + "K" + "\n";
+                      content +="Temp:"  + " " + String.format("%.1f", convert(weatherResponses.getMain().getTemp())) + "C " + "\n";
+                      content +="Temp odczuwalna" + " " + String.format("%.1f", convert(weatherResponses.getMain().getFeelsLike()))+ "C" + "\n";
 //                    content +="Temp min:" + " " + weatherResponses.getMain().getTempMin() + "K " +"\n";
-                      content +="Temp max:" + " " + String.format("%.1f", convert(weatherResponses.getMain().getTempMax())) + " C"+ "\n";
-//                    content +="Ciśnienie:" + " " + weatherResponses.getMain().getPressure() + "hPa"+"\n";
+//                      content +="Temp max:" + " " + String.format("%.1f", convert(weatherResponses.getMain().getTempMax())) + " C"+ "\n";
+                      content +="Ciśnienie:" + " " + weatherResponses.getMain().getPressure() + "hPa"+"\n";
                       content +="Wilgotność:" + " " + weatherResponses.getMain().getHumidity() + "g/m^3"+"\n";
 //                    content += weatherResponses.getVisibility() + "\n";
 //                    content += weatherResponses.getWind().getSpeed() + "\n";
