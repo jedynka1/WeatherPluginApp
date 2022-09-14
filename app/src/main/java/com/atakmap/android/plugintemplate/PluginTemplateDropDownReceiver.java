@@ -1,6 +1,7 @@
 
 package com.atakmap.android.plugintemplate;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -153,6 +154,8 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 
 
 
+
+
         Call<WeatherResponse> weatherResponse = jsonPlaceHolderApi.weatherResponse(cordLan,cordLon, "503731d3cb394ea86dc6cfdd6cdb357a");
 
         weatherResponse.enqueue(new Callback<WeatherResponse>() {
@@ -162,7 +165,6 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
                     textView.setText("Code:" + response.code());
                 }
                 WeatherResponse weatherResponses = response.body();
-
 
 
                 for(Weather weather: weatherResponses.getWeather()){
@@ -177,7 +179,7 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 //                    content +="Temp:"  + " " + weatherResponses.getMain().getTemp() + "K " + "\n";
 //                    content +="Temp odczuwalna" + " " + weatherResponses.getMain().getFeelsLike() + "K" + "\n";
 //                    content +="Temp min:" + " " + weatherResponses.getMain().getTempMin() + "K " +"\n";
-//                    content +="Temp max:" + " " + weatherResponses.getMain().getTempMax() + " K"+ "\n";
+                      content +="Temp max:" + " " + String.format("%.1f", convert(weatherResponses.getMain().getTempMax())) + " C"+ "\n";
 //                    content +="Ciśnienie:" + " " + weatherResponses.getMain().getPressure() + "hPa"+"\n";
                       content +="Wilgotność:" + " " + weatherResponses.getMain().getHumidity() + "g/m^3"+"\n";
 //                    content += weatherResponses.getVisibility() + "\n";
@@ -198,6 +200,12 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
                     Log.d("test", "cordinated setted succesfully" + content);
                 }
             }
+
+            private double convert(Double temp) {
+                temp = temp - 273.15;
+                return temp;
+            }
+
             @Override
             public void onFailure(Call<WeatherResponse> call, Throwable t) {
                 textView.setText(t.getMessage());
@@ -205,6 +213,8 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 
             }
         });
+
+
     }
     /**************************** PUBLIC METHODS *****************************/
 
