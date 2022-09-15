@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Environment;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -16,12 +18,15 @@ import android.widget.Toast;
 import com.atakmap.android.cot.CotMapComponent;
 import com.atakmap.android.drawing.mapItems.DrawingRectangle;
 import com.atakmap.android.drawing.mapItems.DrawingShape;
+import com.atakmap.android.icons.UserIcon;
 import com.atakmap.android.importexport.CotEventFactory;
 import com.atakmap.android.ipc.AtakBroadcast;
 import com.atakmap.android.maps.MapGroup;
 import com.atakmap.android.maps.Marker;
 import com.atakmap.android.maps.MultiPolyline;
 import com.atakmap.android.menu.PluginMenuParser;
+import com.atakmap.android.routes.Route;
+import com.atakmap.android.user.PlacePointTool;
 import com.atakmap.coremap.cot.event.CotEvent;
 import com.atakmap.coremap.maps.coords.GeoPoint;
 
@@ -60,6 +65,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
+import java.lang.Math;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
@@ -72,6 +78,9 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
     public View templateView;
 
     private TextView textView;
+    private MapView mapView;
+    private Route r;
+
 
     private final Context pluginContext;
 
@@ -82,7 +91,6 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         super(mapView);
         this.pluginContext = context;
 
-
         // Remember to use the PluginLayoutInflator if you are actually inflating a custom view
         // In this case, using it is not necessary - but I am putting it here to remind
         // developers to look at this Inflator
@@ -90,9 +98,10 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         templateView = PluginLayoutInflater.inflate(context,
                 R.layout.fragment_plugin_main, null);
 
-        TextView myText = (TextView) templateView.findViewById(R.id.load_weather_data);
-
         textView = templateView.findViewById(R.id.load_weather_data);
+        textView = templateView.findViewById(R.id.loadCord);
+
+
 
         View.OnLongClickListener longClickListener = new View.OnLongClickListener() {
 
@@ -130,6 +139,21 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
             }
         });
 
+        final Button getCords = templateView
+                .findViewById(R.id.get_cords);
+        getCords.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GeoPoint location = getMapView().getCenterPoint().get();
+                double data1 = location.getLatitude();
+               // location.getLongitude();
+                TextView data =templateView.findViewById(R.id.loadCord);
+                double cord = Double.parseDouble(data.getText().toString());
+
+
+                Log.d("test", "getting sucessfully");
+            }
+        });
     }
 
     public void confirm(){
@@ -141,20 +165,15 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 
         JsonApi jsonPlaceHolderApi = retrofit.create(JsonApi.class);
 
-
-        templateView.findViewById(R.id.enter_your_lat);
-
          EditText parLan =templateView.findViewById(R.id.enter_your_lat);
          EditText parLon = templateView.findViewById(R.id.enter_your_lon);
 
-         double cordLan = Double.parseDouble(parLan.getText().toString());
-         Log.d("test", "cord Lan setted properly" + parLan.getText().toString());
-         double cordLon = Double.parseDouble(parLon.getText().toString());
+        double cordLan = Double.parseDouble(parLan.getText().toString());
+
+        Log.d("test", "cord Lan setted properly" + parLan.getText().toString());
+        double cordLon = Math.ceil(Double.parseDouble(parLon.getText().toString()));
          Log.d("test", "cord Lon setted properly" + parLon.getText().toString());
-
-
-
-
+        Log.d("test", "get cordinate properly");
 
         Call<WeatherResponse> weatherResponse = jsonPlaceHolderApi.weatherResponse(cordLan,cordLon, "503731d3cb394ea86dc6cfdd6cdb357a");
 
@@ -214,21 +233,23 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
             }
         });
 
-
     }
+
+
     /**************************** PUBLIC METHODS *****************************/
 
     public void disposeImpl() {
     }
 
     public void onClick() {
+        GeoPointMetaData sp = getMapView().getPointWithElevation();
+        GeoPoint x = new GeoPoint(
+                sp.get().getLatitude() ,
+                sp.get().getLongitude());
 
     }
 
     /**************************** INHERITED METHODS *****************************/
-    public TextView csvreee;
-
-
     @Override
     public void onReceive(Context context, Intent intent) {
 
