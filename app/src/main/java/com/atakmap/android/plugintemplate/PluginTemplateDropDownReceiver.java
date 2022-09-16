@@ -81,7 +81,6 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
     private MapView mapView;
     private Route r;
 
-
     private final Context pluginContext;
 
     /**************************** CONSTRUCTOR *****************************/
@@ -91,17 +90,10 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         super(mapView);
         this.pluginContext = context;
 
-        // Remember to use the PluginLayoutInflator if you are actually inflating a custom view
-        // In this case, using it is not necessary - but I am putting it here to remind
-        // developers to look at this Inflator
-
         templateView = PluginLayoutInflater.inflate(context,
                 R.layout.fragment_plugin_main, null);
 
         textView = templateView.findViewById(R.id.load_weather_data);
-        textView = templateView.findViewById(R.id.loadCord);
-
-
 
         View.OnLongClickListener longClickListener = new View.OnLongClickListener() {
 
@@ -138,22 +130,6 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
                 confirm();
             }
         });
-
-        final Button getCords = templateView
-                .findViewById(R.id.get_cords);
-        getCords.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                GeoPoint location = getMapView().getCenterPoint().get();
-                double data1 = location.getLatitude();
-               // location.getLongitude();
-                TextView data =templateView.findViewById(R.id.loadCord);
-                double cord = Double.parseDouble(data.getText().toString());
-
-
-                Log.d("test", "getting sucessfully");
-            }
-        });
     }
 
     public void confirm(){
@@ -165,17 +141,27 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 
         JsonApi jsonPlaceHolderApi = retrofit.create(JsonApi.class);
 
-         EditText parLan =templateView.findViewById(R.id.enter_your_lat);
-         EditText parLon = templateView.findViewById(R.id.enter_your_lon);
+        PlacePointTool.MarkerCreator mc = new PlacePointTool.MarkerCreator(
+                getMapView().getPointWithElevation());
+        mc.showCotDetails(false);
+        double lantitude = Math.ceil(mc.placePoint().getPoint().getLatitude());
+        double lontitude = Math.ceil(mc.placePoint().getPoint().getLongitude());
+        Log.d("test", "lan set properly" + lantitude);
+       // Log.d("test", "lon set properly" + lontitude);
 
-        double cordLan = Double.parseDouble(parLan.getText().toString());
+         EditText parLan =templateView.findViewById(R.id.enter_your_lat);
+         parLan.setText(String.valueOf(lantitude));
+         EditText parLon = templateView.findViewById(R.id.enter_your_lon);
+         parLon.setText(String.valueOf(lontitude));
+
+       // double cordLan = Double.parseDouble(parLan.getText().toString());
 
         Log.d("test", "cord Lan setted properly" + parLan.getText().toString());
-        double cordLon = Math.ceil(Double.parseDouble(parLon.getText().toString()));
+      //  double cordLon = Math.ceil(Double.parseDouble(parLon.getText().toString()));
          Log.d("test", "cord Lon setted properly" + parLon.getText().toString());
-        Log.d("test", "get cordinate properly");
+       // Log.d("test", "get cordinate properly");
 
-        Call<WeatherResponse> weatherResponse = jsonPlaceHolderApi.weatherResponse(cordLan,cordLon, "503731d3cb394ea86dc6cfdd6cdb357a");
+        Call<WeatherResponse> weatherResponse = jsonPlaceHolderApi.weatherResponse(lantitude,lontitude, "503731d3cb394ea86dc6cfdd6cdb357a");
 
         weatherResponse.enqueue(new Callback<WeatherResponse>() {
             @Override
@@ -235,18 +221,9 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 
     }
 
-
     /**************************** PUBLIC METHODS *****************************/
 
     public void disposeImpl() {
-    }
-
-    public void onClick() {
-        GeoPointMetaData sp = getMapView().getPointWithElevation();
-        GeoPoint x = new GeoPoint(
-                sp.get().getLatitude() ,
-                sp.get().getLongitude());
-
     }
 
     /**************************** INHERITED METHODS *****************************/
