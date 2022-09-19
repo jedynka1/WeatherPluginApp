@@ -45,7 +45,7 @@
 
             <EditText
                 android:id="@+id/enter_your_lat"
-                android:layout_width="129dp"
+                android:layout_width="115dp"
                 android:layout_height="47dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
@@ -71,7 +71,7 @@
 
             <EditText
                 android:id="@+id/enter_your_lon"
-                android:layout_width="129dp"
+                android:layout_width="115dp"
                 android:layout_height="47dp"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
@@ -86,7 +86,7 @@
             <Button
                 android:id="@+id/confirm"
                 style="@style/darkButton"
-                android:layout_width="127dp"
+                android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
@@ -100,7 +100,7 @@
             <TextView
                 android:id="@+id/load_weather_data"
                 android:layout_width="323dp"
-                android:layout_height="195dp"
+                android:layout_height="378dp"
                 android:layout_marginTop="20dp"
                 android:text=""
                 app:layout_constraintBottom_toBottomOf="parent"

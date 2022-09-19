@@ -150,7 +150,16 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
                 getMapView().getPointWithElevation());
         mc.showCotDetails(false);
         double lantitude =  mc.placePoint().getPoint().getLatitude();
+        String parseLantitude   = String.format("%.5f", lantitude);
+        String[] splitLantitudeNumber= parseLantitude.split(",");
+        String latNumber = splitLantitudeNumber[0]+ "."+splitLantitudeNumber[1];
+        lantitude = Double.parseDouble(latNumber);
         double lontitude = mc.placePoint().getPoint().getLongitude();
+        String parseLontitude =  String.format("%.5f", lontitude);
+        String[] splitLontitudeNumber = parseLontitude.split(",");
+        String lonNumber = splitLontitudeNumber[0] + "." + splitLontitudeNumber[1];
+        lontitude = Double.parseDouble(lonNumber);
+
         Log.d("test", "lan set properly" + lantitude);
        // Log.d("test", "lon set properly" + lontitude);
 
@@ -190,8 +199,7 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 
                 for(Weather weather: weatherResponses.getWeather()){
                     String content = "";
-//                    content +="Szerokość geo:"+ " "+ weatherResponses.getCoord().getLat() +"\n";
-//                    content +="Długość geo:" + " " + weatherResponses.getCoord().getLon() + "\n";
+
 //                    content += weather.getId() + "\n";
 //                    content += weather.getMain() + "\n";
 //                    content += weather.getDescription() + "\n";
@@ -199,8 +207,6 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 //                    content += weatherResponses.getBase() + "\n";
                       content +="Temp:"  + " " + String.format("%.1f", convert(weatherResponses.getMain().getTemp())) + "C " + "\n";
                       content +="Temp odczuwalna" + " " + String.format("%.1f", convert(weatherResponses.getMain().getFeelsLike()))+ "C" + "\n";
-//                    content +="Temp min:" + " " + weatherResponses.getMain().getTempMin() + "K " +"\n";
-//                      content +="Temp max:" + " " + String.format("%.1f", convert(weatherResponses.getMain().getTempMax())) + " C"+ "\n";
                       content +="Ciśnienie:" + " " + weatherResponses.getMain().getPressure() + "hPa"+"\n";
                       content +="Wilgotność:" + " " + weatherResponses.getMain().getHumidity() + "g/m^3"+"\n";
 //                    content += weatherResponses.getVisibility() + "\n";
