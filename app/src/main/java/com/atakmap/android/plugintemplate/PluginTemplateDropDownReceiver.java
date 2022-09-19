@@ -149,8 +149,8 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         PlacePointTool.MarkerCreator mc = new PlacePointTool.MarkerCreator(
                 getMapView().getPointWithElevation());
         mc.showCotDetails(false);
-        double lantitude = Math.ceil( mc.placePoint().getPoint().getLatitude());
-        double lontitude = Math.ceil(mc.placePoint().getPoint().getLongitude());
+        double lantitude =  mc.placePoint().getPoint().getLatitude();
+        double lontitude = mc.placePoint().getPoint().getLongitude();
         Log.d("test", "lan set properly" + lantitude);
        // Log.d("test", "lon set properly" + lontitude);
 
@@ -230,7 +230,7 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
             @Override
             public void onFailure(Call<WeatherResponse> call, Throwable t) {
                 textView.setText(t.getMessage());
-                Log.d("test",  t.getMessage() + "Error read data");
+                Log.e("test",  "Nie udalo sie pobrac pogody", t);
 
             }
         });
