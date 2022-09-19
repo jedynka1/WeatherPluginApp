@@ -160,6 +160,7 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         String lonNumber = splitLontitudeNumber[0] + "." + splitLontitudeNumber[1];
         lontitude = Double.parseDouble(lonNumber);
 
+
         Log.d("test", "lan set properly" + lantitude);
        // Log.d("test", "lon set properly" + lontitude);
 
@@ -171,11 +172,13 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         //Marker m = mc.placePoint();
 
         // m.setPoint(Double.parseDouble(String.valueOf(lantitude)),Double.parseDouble(String.valueOf(lontitude);
-       // CotPoint cotPoint = new CotPoint(Double.parseDouble(String.valueOf(lantitude)),Double.parseDouble(String.valueOf(lontitude)), 2.0, 2.0, 0.0 );
-//        CotEvent cotEvent = createPoint(10, 10);
-//        cotEvent.setUID("znacznik");
-//        cotEvent.setType("a-f-G-U-C-I");
-//        CotMapComponent.getExternalDispatcher().dispatch(cotEvent);
+        CotPoint cotPoint = new CotPoint(Double.parseDouble(String.valueOf(lantitude)),Double.parseDouble(String.valueOf(lontitude)), 2.0, 2.0, 0.0 );
+        CotEvent cotEvent = createPoint(lantitude, lontitude);
+        cotEvent.setUID("znacznik");
+        //cotEvent.setPoint(cotPoint);
+        cotEvent.setType("a-f-G-U-C-I");
+        CotMapComponent.getInternalDispatcher().dispatch(cotEvent);
+        Log.d("test", "znacznik zostal poprawnie ustawiony" + cotEvent);
 
        // double cordLan = Double.parseDouble(parLan.getText().toString());
 
@@ -216,7 +219,7 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 //                    content += weatherResponses.getDt() + "\n";
 //                    content += weatherResponses.getSys().getType() + "\n";
 //                    content += weatherResponses.getSys().getId() + "\n";
-//                    content += "Kraj:" + " " + weatherResponses.getSys().getCountry() + "\n";
+                      content += "Kraj:" + " " + weatherResponses.getSys().getCountry() + "\n";
 //                    content += weatherResponses.getSys().getSunrise() + "\n";
 //                    content += weatherResponses.getSys().getSunset() + "\n";
 //                    content += "Strefa czasowa: " + " " + weatherResponses.getTimezone() +  "\n";
@@ -243,21 +246,21 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 
     }
 
-//    private CotEvent createPoint(double lat, double lon) {
-//        CotPoint cotPoint = new CotPoint(lat, lon, 0.0, 2.0, 2.0);
-//        CotEvent cotEvent = new CotEvent();
-//        CoordinatedTime time = new CoordinatedTime();
-//
-//        cotEvent.setTime(time);
-//        cotEvent.setStart(time);
-//        cotEvent.setHow("h-e");
-//        cotEvent.setStale(time.addMinutes(10));
-//        cotEvent.setType("a-f-G-U-C-I");
-//        cotEvent.setPoint(cotPoint);
-//        return  cotEvent;
-//
-//
-//    }
+    private CotEvent createPoint(double lat, double lon) {
+        CotPoint cotPoint = new CotPoint(lat, lon, 0.0, 2.0, 2.0);
+        CotEvent cotEvent = new CotEvent();
+        CoordinatedTime time = new CoordinatedTime();
+
+        cotEvent.setTime(time);
+        cotEvent.setStart(time);
+        cotEvent.setHow("h-e");
+        cotEvent.setStale(time.addMinutes(10));
+        cotEvent.setType("a-f-G-U-C-I");
+        cotEvent.setPoint(cotPoint);
+        return  cotEvent;
+
+
+    }
 
     /**************************** PUBLIC METHODS *****************************/
 
