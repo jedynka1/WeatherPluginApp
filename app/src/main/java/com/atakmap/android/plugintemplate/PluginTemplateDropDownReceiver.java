@@ -135,6 +135,88 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
                 confirm();
             }
         });
+        final Button displayWeatherData = templateView
+                .findViewById(R.id.displayWeatherData);
+        displayWeatherData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                displayWeather();
+            }
+        });
+    }
+
+
+    private void displayWeather() {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://api.openweathermap.org/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        JsonApi jsonPlaceHolderApi = retrofit.create(JsonApi.class);
+
+        EditText parLan =templateView.findViewById(R.id.enter_your_lat);
+
+        EditText parLon = templateView.findViewById(R.id.enter_your_lon);
+        double cordLan = Double.parseDouble(parLan.getText().toString());
+        double cordLon = Math.ceil(Double.parseDouble(parLon.getText().toString()));
+
+        CotEvent cotEvent = createPoint(cordLan, cordLon);
+        cotEvent.setUID("znacznik");
+        cotEvent.setType("a-f-G-U-C-I");
+        CotMapComponent.getInternalDispatcher().dispatch(cotEvent);
+
+
+        Call<WeatherResponse> weatherResponse = jsonPlaceHolderApi.weatherResponse(cordLan,cordLon, "503731d3cb394ea86dc6cfdd6cdb357a");
+
+        weatherResponse.enqueue(new Callback<WeatherResponse>() {
+            @Override
+            public void onResponse(Call<WeatherResponse> call, Response<WeatherResponse> response) {
+                if (!response.isSuccessful()) {
+                    textView.setText("Code:" + response.code());
+                }
+                WeatherResponse weatherResponses = response.body();
+
+
+                for(Weather weather: weatherResponses.getWeather()){
+                    String content = "";
+                    content +="Temp:"  + " " + String.format("%.1f", convert(weatherResponses.getMain().getTemp())) + "C " + "\n";
+                    content +="Temp odczuwalna" + " " + String.format("%.1f", convert(weatherResponses.getMain().getFeelsLike()))+ "C" + "\n";
+                    content +="Ciśnienie:" + " " + weatherResponses.getMain().getPressure() + "hPa"+"\n";
+                    content +="Wilgotność:" + " " + weatherResponses.getMain().getHumidity() + "g/m^3"+"\n";
+//                    content += weatherResponses.getVisibility() + "\n";
+//                    content += weatherResponses.getWind().getSpeed() + "\n";
+//                    content += weatherResponses.getWind().getDeg() + "\n";
+//                    content += weatherResponses.getClouds().getAll() + "\n";
+//                    content += weatherResponses.getDt() + "\n";
+//                    content += weatherResponses.getSys().getType() + "\n";
+//                    content += weatherResponses.getSys().getId() + "\n";
+                    content += "Kraj:" + " " + weatherResponses.getSys().getCountry() + "\n";
+//                    content += weatherResponses.getSys().getSunrise() + "\n";
+//                    content += weatherResponses.getSys().getSunset() + "\n";
+//                    content += "Strefa czasowa: " + " " + weatherResponses.getTimezone() +  "\n";
+//                    content += weatherResponses.getId() + "\n";
+//                    content += weatherResponses.getName() + "\n";
+//                    content += weatherResponses.getCod() + "\n";
+                    textView.setText(content);
+                    Log.d("test", "cordinated setted succesfully" + content);
+                }
+            }
+
+            private double convert(Double temp) {
+                temp = temp - 273.15;
+                return temp;
+            }
+
+            @Override
+            public void onFailure(Call<WeatherResponse> call, Throwable t) {
+                textView.setText(t.getMessage());
+                Log.e("test",  "Nie udalo sie pobrac pogody", t);
+
+            }
+        });
+
+
+
     }
 
     public void confirm(){
