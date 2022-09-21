@@ -5,6 +5,8 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -14,6 +16,7 @@ import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +30,7 @@ import com.atakmap.android.maps.MapGroup;
 import com.atakmap.android.maps.Marker;
 import com.atakmap.android.maps.MultiPolyline;
 import com.atakmap.android.menu.PluginMenuParser;
+import com.atakmap.android.plugintemplate.plugin.JsonApiIcon;
 import com.atakmap.android.routes.Route;
 import com.atakmap.android.user.PlacePointTool;
 import com.atakmap.coremap.cot.event.CotEvent;
@@ -40,6 +44,7 @@ import com.atakmap.android.dropdown.DropDown.OnStateListener;
 import com.atakmap.android.dropdown.DropDownReceiver;
 
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -64,6 +69,7 @@ import com.atakmap.coremap.log.Log;
 import com.atakmap.coremap.maps.coords.GeoPointMetaData;
 import com.atakmap.coremap.maps.time.CoordinatedTime;
 
+import okhttp3.ResponseBody;
 import opencsv.CSVReader;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -158,6 +164,12 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
+        Retrofit retrofitIcon = new Retrofit.Builder()
+                .baseUrl("http://openweathermap.org/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        JsonApiIcon jsonPlaceHolderApiIcon = retrofitIcon.create(JsonApiIcon.class);
         JsonApi jsonPlaceHolderApi = retrofit.create(JsonApi.class);
         EditText parLan =templateView.findViewById(R.id.enter_your_lat);
         EditText parLon = templateView.findViewById(R.id.enter_your_lon);
@@ -234,6 +246,13 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
+        Retrofit retrofitIcon = new Retrofit.Builder()
+                .baseUrl("http://openweathermap.org/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+
+        JsonApiIcon jsonPlaceHolderApiIcon = retrofitIcon.create(JsonApiIcon.class);
         JsonApi jsonPlaceHolderApi = retrofit.create(JsonApi.class);
 
         PlacePointTool.MarkerCreator mc = new PlacePointTool.MarkerCreator(
@@ -288,20 +307,37 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
                     textView.setText("Code:" + response.code());
                 }
                 WeatherResponse weatherResponses = response.body();
+                if (weatherResponses.getWeather().size() >= 1) {
+                    Weather weather = weatherResponses.getWeather().get(0);
+                    Log.d("test", "pobrano" + weather.getIcon());
+                    Call<ResponseBody> responseIcon = jsonPlaceHolderApiIcon.getWeatherIcon(weather.getIcon(), "503731d3cb394ea86dc6cfdd6cdb357a");
+                    responseIcon.enqueue(new Callback<ResponseBody>() {
+                        @Override
+                        public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                            Log.d("test", "pobrano" + response.code());
+                            Log.d("test", "pobrano" + response.body());
+                            BufferedInputStream isr = new BufferedInputStream(response.body().byteStream());
+                            Bitmap bitMap = BitmapFactory.decodeStream(isr);
+                            ImageView view = templateView.findViewById(R.id.icon);
+                            view.setImageBitmap(bitMap);
+                        }
 
+                        @Override
+                        public void onFailure(Call<ResponseBody> call, Throwable t) {
 
-                for(Weather weather: weatherResponses.getWeather()){
+                        }
+                    });
+
                     String content = "";
-
 //                    content += weather.getId() + "\n";
 //                    content += weather.getMain() + "\n";
 //                    content += weather.getDescription() + "\n";
 //                    content += weather.getIcon() + "\n";
 //                    content += weatherResponses.getBase() + "\n";
-                      content +="Temp:"  + " " + String.format("%.1f", convert(weatherResponses.getMain().getTemp())) + "C " + "\n";
-                      content +="Temp odczuwalna" + " " + String.format("%.1f", convert(weatherResponses.getMain().getFeelsLike()))+ "C" + "\n";
-                      content +="Ciśnienie:" + " " + weatherResponses.getMain().getPressure() + "hPa"+"\n";
-                      content +="Wilgotność:" + " " + weatherResponses.getMain().getHumidity() + "g/m^3"+"\n";
+                    content += "Temp:" + " " + String.format("%.1f", convert(weatherResponses.getMain().getTemp())) + "C " + "\n";
+                    content += "Temp odczuwalna" + " " + String.format("%.1f", convert(weatherResponses.getMain().getFeelsLike())) + "C" + "\n";
+                    content += "Ciśnienie:" + " " + weatherResponses.getMain().getPressure() + "hPa" + "\n";
+                    content += "Wilgotność:" + " " + weatherResponses.getMain().getHumidity() + "g/m^3" + "\n";
 //                    content += weatherResponses.getVisibility() + "\n";
 //                    content += weatherResponses.getWind().getSpeed() + "\n";
 //                    content += weatherResponses.getWind().getDeg() + "\n";
@@ -309,7 +345,7 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 //                    content += weatherResponses.getDt() + "\n";
 //                    content += weatherResponses.getSys().getType() + "\n";
 //                    content += weatherResponses.getSys().getId() + "\n";
-                      content += "Kraj:" + " " + weatherResponses.getSys().getCountry() + "\n";
+                    content += "Kraj:" + " " + weatherResponses.getSys().getCountry() + "\n";
 //                    content += weatherResponses.getSys().getSunrise() + "\n";
 //                    content += weatherResponses.getSys().getSunset() + "\n";
 //                    content += "Strefa czasowa: " + " " + weatherResponses.getTimezone() +  "\n";
@@ -317,11 +353,10 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 //                    content += weatherResponses.getName() + "\n";
 //                    content += weatherResponses.getCod() + "\n";
                     textView.setText(content);
-                   // cloud.setText(content);
+                    // cloud.setText(content);
                     Log.d("test", "cordinated setted succesfully" + content);
                 }
             }
-
             private double convert(Double temp) {
                 temp = temp - 273.15;
                 return temp;
