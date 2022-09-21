@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/WAT/Desktop/nowe/app/kopia/aplikacja/atak-civ/plugin-examples/plugintemplate/app/src/main/res/layout/fragment_plugin_main.xml" value="0.2269021739130435" />
-        <entry key="..\:/Users/WAT/Desktop/nowe/app/kopia/aplikacja/atak-civ/plugin-examples/plugintemplate/app/src/main/res/layout/main_layout.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/WAT/Desktop/Atak_plugin/Plugin/Plugin/nowe/nowe/app/kopia/aplikacja/atak-civ/plugin-examples/plugintemplate/app/src/main/res/drawable/btn_gray.xml" value="0.216" />
+        <entry key="..\:/Users/WAT/Desktop/Atak_plugin/Plugin/Plugin/nowe/nowe/app/kopia/aplikacja/atak-civ/plugin-examples/plugintemplate/app/src/main/res/drawable/cloud.xml" value="0.2" />
+        <entry key="..\:/Users/WAT/Desktop/Atak_plugin/Plugin/Plugin/nowe/nowe/app/kopia/aplikacja/atak-civ/plugin-examples/plugintemplate/app/src/main/res/drawable/ic_cloudy_weather_svgrepo_com.xml" value="0.216" />
+        <entry key="..\:/Users/WAT/Desktop/Atak_plugin/Plugin/Plugin/nowe/nowe/app/kopia/aplikacja/atak-civ/plugin-examples/plugintemplate/app/src/main/res/drawable/ic_weather_svgrepo_com.xml" value="0.1655" />
+        <entry key="..\:/Users/WAT/Desktop/Atak_plugin/Plugin/Plugin/nowe/nowe/app/kopia/aplikacja/atak-civ/plugin-examples/plugintemplate/app/src/main/res/drawable/shape.xml" value="0.1125" />
+        <entry key="..\:/Users/WAT/Desktop/Atak_plugin/Plugin/Plugin/nowe/nowe/app/kopia/aplikacja/atak-civ/plugin-examples/plugintemplate/app/src/main/res/drawable/shape_label.xml" value="0.1125" />
+        <entry key="..\:/Users/WAT/Desktop/Atak_plugin/Plugin/Plugin/nowe/nowe/app/kopia/aplikacja/atak-civ/plugin-examples/plugintemplate/app/src/main/res/drawable/sun.xml" value="0.216" />
+        <entry key="..\:/Users/WAT/Desktop/Atak_plugin/Plugin/Plugin/nowe/nowe/app/kopia/aplikacja/atak-civ/plugin-examples/plugintemplate/app/src/main/res/drawable/temperature.xml" value="0.2015" />
+        <entry key="..\:/Users/WAT/Desktop/Atak_plugin/Plugin/Plugin/nowe/nowe/app/kopia/aplikacja/atak-civ/plugin-examples/plugintemplate/app/src/main/res/layout/fragment_plugin_main.xml" value="0.16" />
+        <entry key="..\:/Users/WAT/Desktop/Atak_plugin/Plugin/Plugin/nowe/nowe/app/kopia/aplikacja/atak-civ/plugin-examples/plugintemplate/app/src/main/res/layout/main_layout.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

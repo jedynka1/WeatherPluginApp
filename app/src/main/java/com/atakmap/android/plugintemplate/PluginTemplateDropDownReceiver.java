@@ -98,7 +98,11 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         templateView = PluginLayoutInflater.inflate(context,
                 R.layout.fragment_plugin_main, null);
 
+
+
         textView = templateView.findViewById(R.id.load_weather_data);
+       // textView.setBackgroundColor(Color.rgb(226, 228, 229));
+       // textView.setText("P O G O D A");
 
         View.OnLongClickListener longClickListener = new View.OnLongClickListener() {
 
@@ -110,29 +114,29 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
             int id = v.getId();
                 if (id == R.id.enter_coordinates) {
                     toast(context.getString(R.string.enter_coordinates));
-                }else if (id == R.id.enter_lat) {
-                    toast(context.getString(R.string.enter_lat));
+//                }//else if (id == R.id.enter_lat) {
+//                    toast(context.getString(R.string.enter_lat));
                 }else if (id == R.id.enter_your_lat) {
                     toast(context.getString(R.string.enter_your_lat));
-                }else if(id == R.id.enter_lon){
-                    toast(context.getString(R.string.enter_lon));
+//                }else if(id == R.id.enter_lon){
+//                    toast(context.getString(R.string.enter_lon));
                 }else if(id == R.id.enter_your_lon){
                     toast(context.getString(R.string.enter_your_lon));
-                }else if(id == R.id.confirm){
+                }else if(id == R.id.refresh){
                     toast(context.getString(R.string.confirm));
-                }else if (id == R.id.load_weather_data){
-                    toast(context.getString(R.string.load_weather_data));
+//                }else if (id == R.id.load_weather_data){
+//                    toast(context.getString(R.string.load_weather_data));
                 }
                 return true;
             }
         };
 
         final Button confirmCoordinates = templateView
-                .findViewById(R.id.confirm);
+                .findViewById(R.id.refresh);
         confirmCoordinates.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                confirm();
+                refresh();
             }
         });
         final Button displayWeatherData = templateView
@@ -147,18 +151,19 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 
 
     private void displayWeather() {
+        //Button cloud =templateView.findViewById(R.id.cloud);
+
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.openweathermap.org/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
         JsonApi jsonPlaceHolderApi = retrofit.create(JsonApi.class);
-
         EditText parLan =templateView.findViewById(R.id.enter_your_lat);
-
         EditText parLon = templateView.findViewById(R.id.enter_your_lon);
         double cordLan = Double.parseDouble(parLan.getText().toString());
         double cordLon = Math.ceil(Double.parseDouble(parLon.getText().toString()));
+
 
         CotEvent cotEvent = createPoint(cordLan, cordLon);
         cotEvent.setUID("znacznik");
@@ -183,8 +188,8 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
                     content +="Temp odczuwalna" + " " + String.format("%.1f", convert(weatherResponses.getMain().getFeelsLike()))+ "C" + "\n";
                     content +="Ciśnienie:" + " " + weatherResponses.getMain().getPressure() + "hPa"+"\n";
                     content +="Wilgotność:" + " " + weatherResponses.getMain().getHumidity() + "g/m^3"+"\n";
-//                    content += weatherResponses.getVisibility() + "\n";
-//                    content += weatherResponses.getWind().getSpeed() + "\n";
+ //                   content +="Opis:" + " " +  weather.getDescription() + "\n";
+ //                   content += "alalal" + weatherResponses.getWind().getSpeed() + "m/s" + "\n";
 //                    content += weatherResponses.getWind().getDeg() + "\n";
 //                    content += weatherResponses.getClouds().getAll() + "\n";
 //                    content += weatherResponses.getDt() + "\n";
@@ -198,7 +203,10 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 //                    content += weatherResponses.getName() + "\n";
 //                    content += weatherResponses.getCod() + "\n";
                     textView.setText(content);
+                   // cloud.setText(content);
                     Log.d("test", "cordinated setted succesfully" + content);
+                    Log.d("test", "opis pobrany" + weather.getDescription());
+
                 }
             }
 
@@ -219,8 +227,8 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 
     }
 
-    public void confirm(){
-
+    public void refresh(){
+        //Button cloud =templateView.findViewById(R.id.cloud);
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.openweathermap.org/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -309,6 +317,7 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 //                    content += weatherResponses.getName() + "\n";
 //                    content += weatherResponses.getCod() + "\n";
                     textView.setText(content);
+                   // cloud.setText(content);
                     Log.d("test", "cordinated setted succesfully" + content);
                 }
             }

@@ -30,6 +30,7 @@ animator fragment_fade_enter
 animator fragment_fade_exit
 animator fragment_open_enter
 animator fragment_open_exit
+array countries_array
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -950,6 +951,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable cloud
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -972,6 +974,7 @@ drawable common_google_signin_btn_text_light_normal_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_launcher
+drawable ic_weather_svgrepo_com
 drawable new_dark_button_bg
 drawable new_dark_button_disabled
 drawable new_dark_button_selected
@@ -988,11 +991,14 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable r_icon
+drawable shape
+drawable shape_label
 drawable style
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable weather
+drawable windy
 id ALT
 id CTRL
 id FUNCTION
@@ -1102,7 +1108,6 @@ id chronometer
 id clockwise
 id closest
 id collapseActionView
-id confirm
 id constraint
 id content
 id contentPanel
@@ -1125,6 +1130,7 @@ id disableHome
 id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
+id displayWeatherData
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -1140,8 +1146,6 @@ id east
 id edit_query
 id end
 id enter_coordinates
-id enter_lat
-id enter_lon
 id enter_your_lat
 id enter_your_lon
 id expand_activities_button
@@ -1168,6 +1172,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id info
@@ -1220,6 +1225,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id refresh
 id reverseSawtooth
 id right
 id right_icon
@@ -1430,6 +1436,7 @@ string enter_your_lat
 string enter_your_lon
 string hello_blank_fragment
 string load_weather_data
+string podaj_wsp_rz_dne
 string search_menu_title
 string status_bar_notification_info_overflow
 string versionName
