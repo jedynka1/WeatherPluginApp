@@ -8,8 +8,8 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "com.atakmap.android.plugintemplate.plugin";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "civ";
-  public static final int VERSION_CODE = 1663747013;
-  public static final String VERSION_NAME = "1.0 (1ef5c74c) - [4.5.1]";
+  public static final int VERSION_CODE = 1663749521;
+  public static final String VERSION_NAME = "1.0 (4947cd85) - [4.5.1]";
   // Field from product flavor: civ
   public static final String ATAK_PACKAGE_NAME = "com.atakmap.app.civ";
 }

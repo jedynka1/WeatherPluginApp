@@ -330,8 +330,8 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 
                     String content = "";
 //                    content += weather.getId() + "\n";
-//                    content += weather.getMain() + "\n";
-//                    content += weather.getDescription() + "\n";
+                    content += "Opis" + " " + weather.getMain() + "\n";
+                    //content += weather.getDescription() + "\n";
 //                    content += weather.getIcon() + "\n";
 //                    content += weatherResponses.getBase() + "\n";
                     content += "Temp:" + " " + String.format("%.1f", convert(weatherResponses.getMain().getTemp())) + "C " + "\n";

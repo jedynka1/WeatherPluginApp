@@ -140,12 +140,12 @@
 
         <TextView
             android:id="@+id/load_weather_data"
-            android:layout_width="212dp"
-            android:layout_height="88dp"
+            android:layout_width="215dp"
+            android:layout_height="116dp"
             android:layout_alignBottom="@+id/refresh"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="177dp"
-            android:layout_marginBottom="-119dp"
+            android:layout_marginEnd="174dp"
+            android:layout_marginBottom="-147dp"
             android:text="TextView" />
 
         <ImageView
